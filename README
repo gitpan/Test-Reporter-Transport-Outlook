@@ -1,0 +1,52 @@
+Test-Reporter-Transport-Outlook
+
+If you want to test Perl modules for CPAN but is located in a very restricted environment, without HTTP or SMTP access
+outside the network and can count only with an Outlook and Exchange server to send emails, this module is for you.
+
+This module will use C<Win32::OLE> module with MS Outlook to create a new email message. This message will contain
+all information regarding the test report and I<would> be ready to be sent I<if> new security patches of Outlook 
+didn't forbid that.
+
+As an alternative, the message can be saved on the "Drafts" (or whatever is called in your computer) or can be displayed
+so you will only need to click (or review before clicking) the report. Default behavior is to save the email so you can
+avoid having lot's of new email messages being opened if you're testing real hard new distributions.
+
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc Test::Reporter::Transport::Outlook
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Test-Reporter-Transport-Outlook
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/Test-Reporter-Transport-Outlook
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/Test-Reporter-Transport-Outlook
+
+    Search CPAN
+        http://search.cpan.org/dist/Test-Reporter-Transport-Outlook/
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2009 Alceu Rodrigues de Freitas Junior
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
